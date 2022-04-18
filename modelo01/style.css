@@ -1,0 +1,176 @@
+/* CONFIG GERAL */
+*{margin: 0; padding: 0;}
+body{font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: #e7ecef;}
+
+/* NAV */
+@keyframes move{
+    from{margin-left: -100%;}
+    to{margin-left: 0;}
+}
+nav{
+    box-sizing: border-box;
+    animation: move;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    position: sticky;
+    margin: auto; padding: 10px;
+    top: 0; width: 99%;
+    background-color: rgb(64, 0, 154);
+    box-shadow: 5px 5px 5px black;
+    color: #ffffff;  
+    display: flex;
+    justify-content: space-evenly; 
+    align-content: center;
+    border-radius:60px 0px;
+}
+/* logo */
+.logo{transition: background-color 500ms ease-out, padding 500ms ease-out;}
+.logo:hover{
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px; 
+}
+/* menu */
+.menu{
+    width: 40%;
+    min-width: 200px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+/* link nav */
+.link-nav{
+    text-decoration: none;
+    align-self: center;
+    color: white;
+    font-size: large;
+    transition: background-color 1s ease-out, padding 500ms;
+}
+.link-nav:hover{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* HEADER */
+header{
+    box-sizing: border-box;
+    width: 100%;
+    background: url(./img/banner-carrinho-de-compras.jpg), no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    display: flex;
+    align-items: center;
+/*  animation: name duration timing-function delay */
+    animation: move   1s       ease-out        1s;
+    margin-bottom: 100px;
+}
+.header-child{
+    width: 500px;
+    padding: 11%;
+    font-size: x-large;
+    text-shadow: 2px 2px 2px black;
+}
+.header-child h2{margin-bottom: 10px;}
+/* button banner */
+#button-header{
+    padding: 10px;
+    font-size: x-large;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+
+    transition: background-color 500ms ease;
+}
+#button-header:hover{background-color: blue;}
+
+/* MAIN */
+main{
+    box-sizing: border-box;
+    width: 100%; 
+    margin: auto; 
+    overflow: hidden; /* Só mostra o que está dentro do conteiner */
+}
+
+/* PICTURES - PRODUTOS*/
+.pictures, .produtos{
+    box-sizing: border-box;
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 100px;
+}
+#title-pictures{
+    padding: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.pictures-child{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    overflow-y: scroll;
+}.img-pictures{width: 500%;}
+
+/* produtos child */
+.produtos-child{
+    box-sizing: border-box;
+    outline-style: dashed;
+    outline: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    background-color: blue;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+/* title produtos child */
+.produtos-child h1{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: block;
+    width: 100%;
+}
+.info-produtos{
+    margin-left: 20px;
+    width: 22%;
+}
+/* img produtos */
+.info-produtos img{width: 100%; margin: auto; display: block;}
+/* title info produtos */
+.info-produtos h4{
+    padding: 10px;
+}
+
+/* IMGs DEMO */
+.imgs-demo{
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.img{width: 100%; display: block; text-align: center; padding-bottom: 50px;}
+.imgs-demo img{width: 33%;}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{text-align: center; padding: 100px;}
